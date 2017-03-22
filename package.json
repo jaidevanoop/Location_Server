@@ -1,0 +1,20 @@
+{
+  "name": "Location_Server",
+  "version": "1.0.0",
+  "description": "DA Project",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jaidevanoop/Location_Server.git"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "mongodb": "^2.2.25"
+  },
+  "author": "Jaidev Anoop",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaidevanoop/Location_Server/issues"
+  },
+  "homepage": "https://github.com/jaidevanoop/Location_Server"
+}
