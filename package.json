@@ -1,20 +1,26 @@
 {
-  "name": "Location_Server",
+  "name": "location_server",
   "version": "1.0.0",
-  "description": "DA Project",
-  "main": "index.js",
+  "description": "DA project",
+  "main": "geo.js",
+  "scripts": {
+    "test": "node geo.js"
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jaidevanoop/Location_Server.git"
+    "url": "git+https://github.com/jaidevanoop/Location_Server.git"
   },
-  "dependencies": {
-    "express": "^4.15.2",
-    "mongodb": "^2.2.25"
-  },
+  "keywords": [
+    "Node"
+  ],
   "author": "Jaidev Anoop",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jaidevanoop/Location_Server/issues"
   },
-  "homepage": "https://github.com/jaidevanoop/Location_Server"
+  "homepage": "https://github.com/jaidevanoop/Location_Server#readme",
+  "dependencies": {
+    "georedis": "^3.1.1",
+    "redis": "^2.7.1"
+  }
 }
