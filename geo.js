@@ -65,6 +65,9 @@ const requestHandler = (request, response) => {
 		})
   
 	}
+	else{
+		console.log("Test")
+	}
   
 	response.end('Hello Node.js Server!')
 }
