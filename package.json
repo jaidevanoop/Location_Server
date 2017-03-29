@@ -2,9 +2,12 @@
   "name": "location_server",
   "version": "1.0.0",
   "description": "DA project",
+  "engines": {
+    "node": "6.7.0"
+  },
   "main": "geo.js",
   "scripts": {
-    "test": "node geo.js"
+    "start": "node geo.js"
   },
   "repository": {
     "type": "git",
