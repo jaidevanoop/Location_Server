@@ -41,6 +41,28 @@ const requestHandler = (request, response) => {
 		people.nearby(user, dist, function(err, locations){
 	  		if(err) console.error(err)
 			else console.log('nearby locations:', locations)
+
+			/*var str = ""
+
+			for( var id in locations){
+				var data = locations[id]
+				console.log(String(data))
+				str += String(data)
+				str += ","
+				
+			}
+
+			console.log(str)
+
+			response.end(str)*/
+			
+			for( var id in locations){
+				var data = locations[id]
+				data += '\n'
+				response.write(data)				
+			}
+			response.end()
+			
 		})
   
 	/*
@@ -69,7 +91,7 @@ const requestHandler = (request, response) => {
 		console.log("Test")
 	}
   
-	response.end('Hello Node.js Server!')
+	//response.end('Hello Node.js Server!')
 }
 
 const server = http.createServer(requestHandler)
